@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartCalc</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+</head>
+
+<body>
+  <div class="calculator-container">
+    <div class="top-bar">
+      <button onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">🌓</button>
+      <button onclick="toggleHistory()" aria-label="Toggle History">📜</button>
+      <button id="radDegToggle" onclick="toggleRadDeg()">RAD</button>
+      <div class="toggle-wrapper">
+        <label class="switch">
+          <input type="checkbox" id="keyboardToggle" checked>
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Pad🎛️/Keys🔤</span>
+      </div>
+
+      <div id="toast"></div>
+
+      <button class="btn" id="backspaceBtn">⌫</button>
+
+
+
+    </div>
+    <textarea id="display" rows="2" wrap="soft"></textarea>
+
+    <textarea id="realtime-result" rows="1" wrap="soft" readonly></textarea>
+
+    <div class="sci-buttons">
+      <button onclick="appendToDisplay('sin(')">sin</button>
+      <button onclick="appendToDisplay('cos(')">cos</button>
+      <button onclick="appendToDisplay('tan(')">tan</button>
+      <button onclick="appendToDisplay('√(')">√</button>
+      <button onclick="appendToDisplay('^')">^</button>
+      <button onclick="appendToDisplay('log(')">log</button>
+      <button onclick="appendToDisplay('ln(')">ln</button>
+      <button onclick="appendToDisplay('π')">π</button>
+      <button onclick="appendToDisplay('e')">e</button>
+    </div>
+
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendToDisplay('(')">(</button>
+      <button onclick="appendToDisplay(')')">)</button>
+      <button onclick="appendToDisplay('/')">/</button>
+
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('%')">%</button>
+
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('*')">×</button>
+
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('+')">+</button>
+
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button class="equal" onclick="calculate()">=</button>
+      <button onclick="appendToDisplay('-')">−</button>
+
+    </div>
+
+    <div class="history-panel" id="historyPanel"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
