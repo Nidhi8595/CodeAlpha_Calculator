@@ -1,5 +1,7 @@
 # 🚀 SmartCalc – The Smartest Way to Calculate
 
+https://nidhi8595.github.io/CodeAlpha_Calculator/
+
 Welcome to **SmartCalc**, a modern, feature-rich, and visually stunning calculator app designed for both casual and advanced users. Whether you need basic arithmetic or advanced scientific calculations, SmartCalc has you covered with a seamless, interactive, and user-friendly experience.
 
 ---
@@ -98,4 +100,3 @@ This project is for educational and personal use.
 
 Enjoy using **SmartCalc** – the smartest way to calculate!
 
-https://nidhi8595.github.io/CodeAlpha_Calculator/
