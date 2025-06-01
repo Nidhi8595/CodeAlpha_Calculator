@@ -83,7 +83,10 @@ Welcome to **SmartCalc**, a modern, feature-rich, and visually stunning calculat
 
 ## 🖼️ Screenshots
 
-> ![alt text](calci.png) 
+> ![alt text](<Screenshot (75)-1.png>)
+> ![alt text](<Screenshot (76).png>)
+> ![alt text](<Screenshot (78).png>)
+> ![alt text](<Screenshot (80).png>)
 
 ---
 
@@ -94,3 +97,5 @@ This project is for educational and personal use.
 ---
 
 Enjoy using **SmartCalc** – the smartest way to calculate!
+
+https://nidhi8595.github.io/CodeAlpha_Calculator/
